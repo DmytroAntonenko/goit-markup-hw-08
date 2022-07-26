@@ -1,11 +1,14 @@
 .footer {
     background-color: $additionalBackgroundColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &-container {
-        display: flex;
+        @media screen and (min-width: 1200px) {
+            display: flex;   
+            }
     }
-
-    &__adress-tumb{
-        margin: 60px 0;
-        }
+}
+.footer__adress-tumb {
+justify-content: center;
 }

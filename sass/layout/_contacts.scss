@@ -1,28 +1,47 @@
+
+
 .contacts {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: inline;
+        margin-left: auto; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        
     display: flex;
     align-content: center;
     margin-left: auto;
-
+    }
 
     &__item:not(:last-child) {
+        margin-bottom: 10px;
+        
+        @media screen and (min-width: 1200px) {
         margin-right: 30px;
+        margin-bottom: 0px;
+        }
     }
 
 
     &__link {
-        display: flex;
-        align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        color: $primaryTextColor;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: $transitionTimingFunction;
+            font-size: 12px;
+            color: $primaryTextColor;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: $transitionTimingFunction;
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            }   
     }
 
     &__icon {
@@ -38,4 +57,5 @@
     &__link:focus &__icon  {
         fill: $accentColor;
     }
+
 }

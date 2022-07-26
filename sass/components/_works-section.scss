@@ -1,4 +1,8 @@
 .works-section {
+
+    display: none;
+
+    @media screen and (min-width: 1200px) {
     padding-top: 0;
     }
     
@@ -34,4 +38,5 @@
         color: $primeryBodyColor;
         background-color: rgba(47, 48, 58, 0.8);
     }
+}
 }
