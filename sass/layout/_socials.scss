@@ -28,10 +28,17 @@
 }
 
 .socials-footer {
-    margin-left: 70px;
+    
+    margin-bottom: 60px;
+
+    // @media screen and (min-width: 768px) {
+    //     margin-left: 165px;  
+    // }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;  
+    }
 
     &__title {
-        padding-top: 12px;
         font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
@@ -39,6 +46,13 @@
         color: $primeryBodyColor;
         margin-bottom: 20px;
         margin-top: 0;
+        @media screen and (min-width: 768px) {
+            padding-top: 5px;  
+        }
+        @media screen and (min-width: 1200px) {
+            padding-top: 12px;  
+        }
+        
     }
 
     &__link {
