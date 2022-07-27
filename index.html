@@ -46,6 +46,19 @@ rel="stylesheet">
                     +38 096 111 11 11</a>
             </li>
         </ul>
+        <button class="mobile-menu__button is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+            <svg aria-label="link mobile menu" width="24" height="16">
+                <use class="mobile-menu__button--cross" href="./images/icons.svg#icon-close-burger"></use>  
+                <use class="mobile-menu__button--menu" href="./images/icons.svg#icon-menu-burger"></use>     
+            </svg>
+        </button>
+        <div class="mobile-menu is-open" id="menu-container" data-menu>
+        Mobile menu
+        </div>
         </div>  
     </header>
     <!--Сменная часть-->
@@ -481,5 +494,7 @@ rel="stylesheet">
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    
 </body>
 </html>
