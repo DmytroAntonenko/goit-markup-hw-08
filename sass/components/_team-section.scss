@@ -7,6 +7,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     &__item {
@@ -15,14 +16,12 @@
         border-radius: 0px 0px 4px 4px;
         padding-top: 0;
         @media screen and (min-width: 480px) {
-            flex-basis: 100%;
-            
+            flex-basis: 450px;
             }
         
 
         @media screen and (min-width: 768px) {
                 flex-basis: 354px;
-
                 } 
 
         @media screen and (min-width: 1200px) {
@@ -30,27 +29,27 @@
             }
     }
 
-    &__item:not(:last-child) {
-        @media screen and (min-width: 480px) {
-            margin-bottom: $cardSetGap;
-            }
+    // &__item:not(:last-child) {
+    //     @media screen and (min-width: 480px) {
+    //         margin-bottom: $cardSetGap;
+    //         }
        
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 0;
-            margin-right: $cardSetGap;
-            }  
-    }
+    //     @media screen and (min-width: 1200px) {
+    //         margin-bottom: 0;
+    //         margin-right: $cardSetGap;
+    //         }  
+    // }
 
-    &__item:nth-child(odd) {
-        @media screen and (min-width: 768px) {
-            margin-right: $cardSetGap;
-        }
-    }
-    &__item:nth-last-child(-n + 2) {
-        @media screen and (min-width: 768px) {
-            margin-bottom: 0;
-        }
-      }
+    // &__item:nth-child(odd) {
+    //     @media screen and (min-width: 768px) {
+    //         margin-right: $cardSetGap;
+    //     }
+    // }
+    // &__item:nth-last-child(-n + 2) {
+    //     @media screen and (min-width: 768px) {
+    //         margin-bottom: 0;
+    //     }
+    //   }
 
     &__name {
         margin-top: $cardSetGap;
