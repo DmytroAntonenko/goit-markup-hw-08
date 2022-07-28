@@ -2,18 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    margin: -15px;
     
     &__item {
-        display: flex;
-        height: 92px; 
-    }
+        // display: flex;
+        padding: 15px;
 }
-
+}
 
 .clients__link {
         width: 210px;
+        height: 92px;
         display: flex;
+        flex-basis: 50%; 
         align-items: center;
         justify-content: center;
         border: 1px solid $primaryTextColor; 
@@ -24,12 +25,12 @@
         transition-duration: 250ms;
         transition-timing-function: $transitionTimingFunction;
 
-            @media screen and (min-width: 768px) {
-                width: 226px;
-                }
+        @media screen and (min-width: 768px) {
+            flex-basis: 33.3333%;
+            }
             @media screen and (min-width: 1200px) {
                 width: 170px;
-            }
+            } 
         
     &:hover,
     &:focus {

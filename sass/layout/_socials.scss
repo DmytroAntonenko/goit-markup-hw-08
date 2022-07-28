@@ -25,15 +25,18 @@
         background-color: $accentColor;
         fill: $primeryBodyColor;
     }
+    &__link--mobile {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+    }
 }
 
 .socials-footer {
     
     margin-bottom: 60px;
-
-    // @media screen and (min-width: 768px) {
-    //     margin-left: 165px;  
-    // }
     @media screen and (min-width: 1200px) {
         margin-left: 70px;  
     }
@@ -59,4 +62,8 @@
         fill: $primeryBodyColor;
         background-color: rgba(255, 255, 255, 0.1);
     }
+}
+
+.socials-mobile {
+    justify-content: left;
 }

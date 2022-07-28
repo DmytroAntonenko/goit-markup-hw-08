@@ -45,40 +45,14 @@
     &:focus {
         fill: $accentColor;
     }
-
-    &--menu {
-        display: none;
-    }
-
-    &.is-open .mobile-menu__button--cross {
-        display: none;
-    }
-
-    &.is-open .mobile-menu__button--menu {
-        display: block;
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
-        }   
-}
-.mobile-menu {
-    position: absolute;
-    // display: none;
-    padding: 30px;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    &.is-open {
-    display: none;
-    }
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    
-
     @media screen and (min-width: 768px) {
         display: none;
         }  
+}
+
+
+.mobile-menu__button--close {
+    position: absolute;
+    right: 25px;
+    top: 21px;
 }

@@ -19,7 +19,7 @@ rel="stylesheet">
             <nav class="site-nav">
                 <ul class="site-nav__list list">
                     <li class="site-nav__item">
-                        <a class="site-nav__link link current" href="#">Студия</a>
+                        <a class="current site-nav__link link" href="#">Студия</a>
                     </li>
                     <li class="site-nav__item">
                         <a class="site-nav__link link" href="./portfolio.html">Портфолио</a>
@@ -46,23 +46,70 @@ rel="stylesheet">
                     +38 096 111 11 11</a>
             </li>
         </ul>
-        <button class="mobile-menu__button is-open"
+        <button class="mobile-menu__button"
             type="button"
             aria-expanded="false"
             aria-controls="menu-container"
-            data-menu-button>
-            <svg aria-label="link mobile menu" width="24" height="16">
-                <use class="mobile-menu__button--cross" href="./images/icons.svg#icon-close-burger"></use>  
+            data-mobile-menu-open>
+            <svg aria-label="link mobile menu" width="24" height="16">  
                 <use class="mobile-menu__button--menu" href="./images/icons.svg#icon-menu-burger"></use>     
             </svg>
         </button>
-        <div class="mobile-menu is-open" id="menu-container" data-menu>
-        Mobile menu
+        <div class="mobile-menu is-hidden" id="menu-container" data-mobile-menu>
+            <button class="mobile-menu__button mobile-menu__button--close"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-mobile-menu-close>
+            <svg aria-label="link mobile menu" width="24" height="16">
+                <use class="mobile-menu__button--cross" href="./images/icons.svg#icon-close-burger"></use>     
+            </svg>
+        </button>
+            <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link mobile-menu__current" href="#">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="#">Контакты</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link--tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link--email link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="socials-mobile socials list">
+                    <li class="socials__item">
+                        <a class=" socials__link--mobile link" href="#">
+                            Instagram  
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class=" socials__link--mobile link" href="#">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link--mobile link" href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class=" socials__link--mobile link" href="#">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>               
         </div>
         </div>  
     </header>
     <!--Сменная часть-->
-    <main>
+    <main>      
         <section class="hero section">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button" data-modal-open>Заказать услугу</button>
@@ -112,7 +159,8 @@ rel="stylesheet">
                                 <svg class="form-request__icon" aria-label="link mail" width="16" height="15">
                                     <use href="./images/icons.svg#icon-check"></use>
                                 </svg>
-                                Соглашаюсь с рассылкой и принимаю <span class="form-request__ruls">Условия договора</span></label>
+                                Соглашаюсь с рассылкой и принимаю <span class="form-request__ruls">Условия договора</span>
+                            </label>
                          </div>
                         <button class="button" type="submit">Отправить</button>  
                     </form>
@@ -168,19 +216,28 @@ rel="stylesheet">
                     <ul class="works__list list">
                         <li class="works__item">
                             <div class="works__thumb">
-                                <img src="./images/box1.jpg" width="370" alt="Вёрстка">
+                                <img
+                                srcset="./images/box1@2x.jpg 2x" 
+                                src="./images/box1.jpg"
+                                width="370"
+                                alt="Вёрстка">
                                 <p class="works__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                             </div>  
                         </li>
                         <li class="works__item">
                             <div class="works__thumb">
-                                <img src="./images/box2.jpg" width="370" alt="Оптимизация">
+                                <img
+                                srcset="./images/box2@2x.jpg 2x"
+                                src="./images/box2.jpg" 
+                                width="370" alt="Оптимизация">
                                 <p class="works__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                             </div>
                         </li>
                         <li class="works__item">
                             <div class="works__thumb">
-                                <img src="./images/box3.jpg" width="370" alt="Дизайн">
+                                <img
+                                srcset="./images/box3@2x.jpg 2x"
+                                src="./images/box3.jpg" width="370" alt="Дизайн">
                                 <p class="works__name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                             </div>
                         </li>
@@ -194,7 +251,9 @@ rel="stylesheet">
                 <ul class="team__list list">
                     <li class="team__item">
                     <div class="team__photo">
-                        <img src="./images/photo1.jpg" alt="фото Игорь Демьяненко">
+                        <img class="team__img"
+                        srcset="./images/photo1@2x.jpg 2x"
+                        src="./images/photo1.jpg" alt="фото Игорь Демьяненко">
                     </div>
                     <div class="team-content">
                         <h3 class="team__name">Игорь Демьяненко</h3>
@@ -238,7 +297,9 @@ rel="stylesheet">
 
                     <li class="team__item">
                     <div class="team__photo">
-                        <img src="./images/photo2.jpg" alt="фото Ольга Репина">
+                        <img class="team__img"
+                        srcset="./images/photo2@2x.jpg 2x"
+                        src="./images/photo2.jpg" alt="фото Ольга Репина">
                     </div>
                     <div class="team-content">
                         <h3 class="team__name">Ольга Репина</h3>
@@ -283,7 +344,9 @@ rel="stylesheet">
 
                     <li class="team__item">
                     <div class="team__photo">
-                        <img src="./images/photo3.jpg" alt="фото Николай Тарасов">
+                        <img class="team__img"
+                        srcset="./images/photo3@2x.jpg 2x"
+                        src="./images/photo3.jpg" alt="фото Николай Тарасов">
                     </div>
                     <div class="team-content">
                         <h3 class="team__name">Николай Тарасов</h3>
@@ -328,7 +391,9 @@ rel="stylesheet">
 
                     <li class="team__item">
                     <div class="team__photo">
-                        <img src="./images/photo4.jpg" alt="фото Михаил Ермаков">
+                        <img class="team__img"
+                        srcset="./images/photo4@2x.jpg 2x"
+                        src="./images/photo4.jpg" alt="фото Михаил Ермаков">
                     </div>
                     <div class="team-content">
                         <h3 class="team__name">Михаил Ермаков</h3>
