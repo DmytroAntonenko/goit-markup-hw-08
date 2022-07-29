@@ -386,6 +386,8 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .socials-footer {
@@ -424,6 +426,11 @@ img {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+.socials__link--linkedin {
+  margin-right: 0;
+  border-right: none;
 }
 
 .subscription {
@@ -570,6 +577,10 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   margin-bottom: 64px;
+}
+
+.mobile-menu__button {
+  fill: #757575;
 }
 
 .current {
@@ -1137,7 +1148,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
-  row-gap: 21px;
+  row-gap: 10px;
   -webkit-column-gap: 4px;
      -moz-column-gap: 4px;
           column-gap: 4px;
