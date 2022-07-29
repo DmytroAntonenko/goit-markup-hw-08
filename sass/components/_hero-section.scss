@@ -11,6 +11,7 @@
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi)  {
     background-image:
@@ -24,6 +25,8 @@
         url(/images/hero768.jpg);
 
     @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi)  {
         background-image:
@@ -38,6 +41,7 @@
         url(/images/hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi)  {
         background-image:
