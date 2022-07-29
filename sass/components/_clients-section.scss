@@ -1,20 +1,25 @@
 .clients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: -15px;
+    // justify-content: center;
+    // margin: -15px;
+
+        // &__list {  
+        // margin: -15px;
+        // }
     
     &__item {
         // display: flex;
         padding: 15px;
-}
+
+    }
 }
 
+
 .clients__link {
-        width: 210px;
+        width: 175px;
         height: 92px;
-        display: flex;
-        flex-basis: 50%; 
+        display: flex; 
         align-items: center;
         justify-content: center;
         border: 1px solid $primaryTextColor; 
@@ -25,11 +30,15 @@
         transition-duration: 250ms;
         transition-timing-function: $transitionTimingFunction;
 
+        @media screen and (min-width: 480px) {
+            width: 195px;
+            }
+
         @media screen and (min-width: 768px) {
-            flex-basis: 33.3333%;
+            width: 216px;
             }
             @media screen and (min-width: 1200px) {
-                width: 170px;
+                width: 165px;
             } 
         
     &:hover,
