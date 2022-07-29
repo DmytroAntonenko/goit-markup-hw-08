@@ -46,7 +46,7 @@ rel="stylesheet">
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="mobile-menu__button"
+            <button class="mobile-menu__button js-open-menu"
             type="button"
             aria-expanded="false"
             aria-controls="menu-container"
@@ -55,8 +55,11 @@ rel="stylesheet">
                 <use class="mobile-menu__button--menu" href="./images/icons.svg#icon-menu-burger"></use>     
             </svg>
         </button>
-        <div class="mobile-menu is-hidden" id="menu-container" data-mobile-menu>
-            <button class="mobile-menu__button mobile-menu__button--close"
+        </div>  
+    </header>
+    <main>
+        <div class="mobile-menu js-menu-container" id="menu-container">
+            <button class="mobile-menu__button mobile-menu__button--close js-close-menu"
             type="button"
             aria-expanded="false"
             aria-controls="menu-container"
@@ -105,10 +108,7 @@ rel="stylesheet">
                         </a>
                     </li>
                 </ul>               
-        </div>
-        </div>  
-    </header>
-    <main>
+        </div>      
         <section class="projects section">
             <div class="container">
             <ul class="projects-filter list">
